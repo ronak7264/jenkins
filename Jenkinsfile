@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        powershell "python --version"
+        sh "python --version"
       }
     }
     stage('hello') {
       steps {
-        powershell "python playground.py"
+        sh "python playground.py"
       }
     }
   }
