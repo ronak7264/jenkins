@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        sh 'C:\Users\Ronak Patel\PycharmProjects\pythonProject\venv\Scripts\python.exe --version'
+        sh 'python --version'
       }
     }
     stage('hello') {
       steps {
-        sh 'C:\Users\Ronak Patel\PycharmProjects\pythonProject\venv\Scripts\python.exe playground.py'
+        sh 'python playground.py'
       }
     }
   }
